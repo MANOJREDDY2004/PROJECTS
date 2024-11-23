@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', sans-serif;
+}
+nav{
+    width: auto;
+    height: 55px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5px;
+    z-index: 999;
+    overflow: hidden;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 20px;  
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    margin-left: 100px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: rgb(250, 177, 167);
+    transform: scale(110%);
+    transition: .3s;
+    border-bottom: 2px solid rgb(250, 177, 167);
+    padding-bottom: 5px;
+}
+button{
+    background-color: rgb(250, 177, 167);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px 10px 20px 10px ;
+    margin-right: 5px;
+    margin-left: 350px;
+    border: 1px solid whitesmoke;
+    transition: .4s;
+    gap: 5px;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(120%);
+    transition: .4s;
+    color: rgb(250, 177, 167);
+    border-color: transparent;
+
+}
+.bgv{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px) brightness(50%);
+}
+.form{
+    color: rgb(250, 177, 167);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 700px;
+}
+::placeholder{
+    color: whitesmoke;
+}
+.form h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+}
+.form input{
+    border-radius: 50px;
+    border: 1px  whitesmoke;
+    background-color: rgba(128, 128, 128, 0.451);
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    color: whitesmoke;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.submitbutton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    color: rgb(250, 177, 167);
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px whitesmoke;
+    margin-bottom: 10px;
+}
+.submitbutton:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgb(250, 177, 167);
+}
+.resetbutton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    color: rgb(250, 177, 167);
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px whitesmoke;
+}
+.resetbutton:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgb(250, 177, 167);
+}
+.box{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: rgba(225, 225, 224, 0.318);
+    background-color: transparent;
+}
+.box:hover {
+    background: rgba(128, 128, 128, 0.237);
+    outline: 1px ridge rgb(250, 177, 167);
+    /* box-shadow: 10px 10px 15px rgb(250, 177, 167); */
+}
+.form p{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(250, 177, 167);
+    padding-top: 10px;
+    gap: 12px;
+}
+.form a{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: rgb(250, 177, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    z-index: 999;
+}

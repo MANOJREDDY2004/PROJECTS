@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: black;
+    height: 60px;
+    width: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    padding-top: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5px;
+    z-index: 999;
+    overflow: hidden;
+}
+nav img{
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    padding-left: 0px;
+    margin: 0px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-left: 0%;
+    padding: 5px;
+    padding-top: 10px;
+    margin-left: 60px;
+    align-items: center;
+    display: flex;
+    transform: scale(90%);
+    transition: .3s;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    transition: .3s;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+button{
+    height: 40px;
+    width: 80px;
+    float: right;
+    background-color: rgba(165, 42, 42, 0.397);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-left: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(120%);
+    transition: .4s;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+
+}
+.bgv{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px) brightness(50%);
+
+}
+body{ 
+    height: 100%;
+    margin: 0;  
+}
+.form{
+    color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 700px;
+}
+::placeholder{
+    color: whitesmoke;
+}
+.form h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    border-top: 2px solid rgb(245, 245, 245);
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+.form input{
+    border-radius: 50px;
+    border: 1px  whitesmoke;
+    background-color: rgba(128, 128, 128, 0.451);
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    color: whitesmoke;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.submitbutton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px whitesmoke;
+    margin-bottom: 10px;
+}
+.submitbutton:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px whitesmoke;
+}
+.resetbutton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px whitesmoke;
+}
+.resetbutton:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px whitesmoke;
+}
+.box{
+    height: 500px;
+    width: 470px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: rgba(225, 225, 224, 0.318);
+    background-color: transparent;
+}
+.box:hover {
+    background: rgba(128, 128, 128, 0.237);
+    outline: 1px ridge whitesmoke;
+    /* box-shadow: 10px 10px 15px whitesmoke; */
+}
+.form p{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: whitesmoke;
+    padding-top: 10px;
+    gap: 12px;
+}
+.form a{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    z-index: 999;
+}

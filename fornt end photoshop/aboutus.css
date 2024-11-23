@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: black;
+    height: 60px;
+    width: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    padding-top: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5px;
+    z-index: 999;
+    overflow: hidden;
+}
+nav img{
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    padding-left: 0px;
+    margin: 0px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-left: 0%;
+    padding: 5px;
+    padding-top: 10px;
+    margin-left: 60px;
+    align-items: center;
+    display: flex;
+    transform: scale(90%);
+    transition: .3s;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    transition: .3s;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+button{
+    height: 40px;
+    width: 80px;
+    float: right;
+    background-color: rgba(165, 42, 42, 0.397);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-left: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(120%);
+    transition: .4s;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+
+}
+body{ 
+    height: 100vw;
+    margin: 0;  
+}
+.about{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.about img{
+    filter: blur(4px) brightness(40%);
+    z-index: -1;
+}
+.about h3{
+    padding-bottom: 700px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(134, 132, 132, 0.966);
+    text-decoration: underline ;
+}
+.span1{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.966);
+    height: 500px;
+    width: 100%;
+
+}
+.text p{
+    z-index: 1;
+    color: rgba(134, 132, 132, 0.966);
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.text ul li{
+    z-index: 1;
+    color: rgba(134, 132, 132, 0.966);
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+.span2{
+    color: whitesmoke;
+}
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    z-index: 999;
+}

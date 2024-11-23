@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', sans-serif;
+}
+nav{
+    width: auto;
+    height: 55px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5px;
+    z-index: 999;
+    overflow: hidden;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 20px;  
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    margin-left: 100px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: rgb(250, 177, 167);
+    transform: scale(110%);
+    transition: .3s;
+    border-bottom: 2px solid rgb(250, 177, 167);
+    padding-bottom: 5px;
+}
+button{
+    background-color: rgb(250, 177, 167);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px 10px 20px 10px ;
+    margin-right: 5px;
+    margin-left: 240px;
+    border: 1px solid whitesmoke;
+    transition: .4s;
+    gap: 5px;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(120%);
+    transition: .4s;
+    color: rgb(250, 177, 167);
+    border-color: transparent;
+
+}
+body{
+    /* overflow: hidden; */
+}
+.about{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.about img{
+    filter: blur(4px) brightness(40%);
+    z-index: -1;
+}
+.about h3{
+    padding-bottom: 700px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 100px;
+    color: rgb(250, 177, 167);
+    text-decoration: underline ;
+}
+.span1{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.966);
+    height: 470px;
+    width: 100%;
+
+}
+.text p{
+    z-index: 1;
+    color: rgb(250, 177, 167);
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.text ul li{
+    z-index: 1;
+    color: rgb(250, 177, 167);
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+.span2{
+    color: whitesmoke;
+}
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 177, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    z-index: 999;
+}

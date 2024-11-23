@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    z-index: 999;
+    overflow: hidden;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 20px;  
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    margin-left: 130px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: rgb(250, 177, 167);
+    transform: scale(110%);
+    transition: .3s;
+    border-bottom: 2px solid rgb(250, 177, 167);
+    padding-bottom: 5px;
+}
+button{
+    background-color: rgb(250, 177, 167);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px 10px 20px 10px ;
+    margin-right: 5px;
+    margin-left: 250px;
+    border: 1px solid whitesmoke;
+    transition: .4s;
+    gap: 5px;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(120%);
+    transition: .4s;
+    color: rgb(250, 177, 167);
+    border-color: transparent;
+
+}
+.bgv{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px) brightness(50%);
+}
+::placeholder{
+    color: whitesmoke;
+}
+.contact input{
+    border-radius: 50px;
+    border: 1px  whitesmoke;
+    background-color: rgba(128, 128, 128, 0.451);
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    color: whitesmoke;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.contact{
+    height: 400px;
+    width: 320px;
+    margin-top: 150px;
+    position: absolute;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 498px;
+    box-shadow: 10px 10px 15px black;
+    color: rgb(250, 177, 167);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(250, 177, 167);
+    text-shadow: 1px 2px 2px black;
+}
+.contact:hover{
+    border: 1px ridge rgb(250, 177, 167);
+}
+.contact h2{
+    color: rgb(250, 177, 167);
+    font-size: 35px;
+}
+.remarks{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.451);
+    resize: none;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+.submitbutton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+    color: rgb(250, 177, 167);
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 120px;
+}
+.submitbutton:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgb(250, 177, 167);
+}
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: rgb(250, 177, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    top: auto;
+    z-index: 999;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Bar</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #search-results {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="search-results"></div>
+
+    <script>
+        // Sample data for demonstration
+        const items = [
+            { name: "home", url: "index.html" },
+            { name: "Banana", url: "banana.html" },
+            { name: "Cherry", url: "cherry.html" },
+            // Add more items with their corresponding URLs
+        ];
+
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+        const searchResults = document.getElementById("search-results");
+
+        searchButton.addEventListener("click", performSearch);
+
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const result = items.find(item => item.name.toLowerCase() === searchTerm);
+
+            if (result) {
+                // Redirect to the corresponding page
+                window.location.href = result.url;
+            } else {
+                searchResults.textContent = "No results found.";
+            }
+        }
+    </script>
+</body>
+</html>
